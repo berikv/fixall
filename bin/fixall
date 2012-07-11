@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Booting fixall proccess $$"
+sleep 2
+echo -n "fixing"
+
+for i in $(seq 1 $((5 + $RANDOM % 10))); do
+    sleep 1
+    echo -n "."
+done
+
+echo " Done!"
+echo "Your problems have been fixed."
+echo "Have a good day!"
